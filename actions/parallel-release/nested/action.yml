@@ -1,0 +1,7 @@
+name: Parallel release nested sentinel
+description: Inert QA-owned transitive sentinel
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: printf '%s\n' PARALLEL_RELEASE_NESTED_EXECUTED

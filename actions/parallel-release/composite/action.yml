@@ -1,0 +1,8 @@
+name: Parallel release composite sentinel
+description: Inert QA-owned remote composite with a remote dependency
+runs:
+  using: composite
+  steps:
+    - uses: bbq-beets/lockfile-qa-gated-public-origin/actions/parallel-release/nested@qa-parallel-release-nested-v1
+    - shell: bash
+      run: printf '%s\n' PARALLEL_RELEASE_COMPOSITE_EXECUTED

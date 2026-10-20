@@ -1,0 +1,7 @@
+name: Parallel release normal sentinel
+description: Inert QA-owned normal-step sentinel
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: printf '%s\n' PARALLEL_RELEASE_NORMAL_EXECUTED

@@ -1,0 +1,7 @@
+name: Parallel release direct sentinel
+description: Inert QA-owned parallel-step sentinel
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: printf '%s\n' PARALLEL_RELEASE_DIRECT_EXECUTED
